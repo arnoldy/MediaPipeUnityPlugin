@@ -287,6 +287,7 @@ cc_library(
         "@mediapipe//mediapipe/calculators/core:packet_presence_calculator",
         "@mediapipe//mediapipe/calculators/core:flow_limiter_calculator",
         "@mediapipe//mediapipe/calculators/image:image_transformation_calculator",
+		"@mediapipe//mediapipe/calculators/tflite:tflite_tensors_to_classification_calculator",
     ] + select({
         "@mediapipe//mediapipe/gpu:disable_gpu": [],
         "//conditions:default": [
